@@ -18,32 +18,9 @@ OpenAI Translator is an AI-powered translation tool designed to translate Englis
 
 ### Usage
 
-You can use OpenAI-Translator either by specifying a configuration file or by providing command-line arguments.
+You can use this OpenAI-Translator on your local by running the command of 
 
-#### Using a configuration file:
-
-Adapt `config.yaml` file with your settings:
-
-```yaml
-model_name: "gpt-4o"
-input_file: "tests/test.pdf"
-output_file_format: "markdown"
-source_language: "English"
-target_language: "Chinese"
+```
+python ai_translator/gradio_server.py
 ```
 
-Then run the tool:
-
-```bash
-python ai_translator/main.py
-```
-
-#### Using command-line arguments:
-
-You can also specify the settings directly on the command line. Here's an example of how to use the OpenAI model:
-
-```bash
-# Set your api_key as an env variable
-export OPENAI_API_KEY="sk-xxx"
-python ai_translator/main.py --model_name "gpt-4o" --input_file "your_input.pdf" --output_file_format "markdown" --source_language "English" --target_language "Chinese"
-```
